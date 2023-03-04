@@ -1,38 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
+
+/* Dark Mode Colors */
+:root {
+  --Light-Blue: #0079ff;
+  --White: #ffffff;
+  --Black: #141d2f;
+  --Dark-Blue: #1e2a47;
+  --Font-Family: "Space Mono", monospace;
+  --Font-Family2: "Rubik", sans-serif;
+  --H1-Px-Size: 26px;
+  --H2-px-Size: 22px;
+  --H3-px-Size: 16px;
+  --H4-px-size: 13px;
+  --Space-Mono-Reg: 400;
+  --Space-Mono-Bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--Font-Family);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: var(--Black);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Header-container > h1,
+.icon-container > h4 {
+  color: var(--White);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 375px) {
+  .header-component-container {
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .icon-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .searchBar-component-container {
+    width: 327px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .Header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Header-container > h4 {
+    font-size: var(--H4-px-size);
+    font-weight: var(--Space-Mono-Bold);
+  }
+
+  .search-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .Input-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon-container {
+    position: absolute;
+    z-index: 1;
+    right: 316px;
+  }
+
+  .Input-container > input {
+    width: 290px;
+    height: 60px;
+    background: var(--Dark-Blue);
+    border-radius: 15px;
+    border: unset;
+    position: relative;
+    margin: 14px;
+    padding-left: 40px;
+  }
+
+  .Input-container > button {
+    background: var(--Light-Blue);
+    width: 84px;
+    height: 46px;
+    border: unset;
+    border-radius: 15px;
+    color: var(--White);
+    font-size: 14px;
+    font-weight: var(--Space-Mono-Bold);
+    position: absolute;
+    left: 269px;
+    top: 105px;
+  }
+
+  .info {
+    background-color: var(--Dark-Blue);
+    height: 517px;
+    width: 327px;
+    margin-left: 25px;
+    border-radius: 15px;
+  }
+
+  .users-info {
+    justify-content: space-evenly;
+    display: flex;
+    padding-top: 30px;
+  }
+
+  .user-profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-profile-info > h3 {
+    font-size: var(--H3-px-size);
+    font-weight: var(--Space-Mono-Bold);
+    color: var(--White);
+  }
+
+  .github-handle {
+    font-size: var(--H4-px-size);
+    font-weight: var(--Space-Mono-Reg);
+    color: var(--Light-Blue);
+  }
+
+  .github-join {
+    font-size: var(--H4-px-size);
+    font-weight: var(--Space-Mono-Reg);
+    color: var(--White);
+  }
+
+  .users-avi {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+  }
+
+  .user-bio {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+  .user-bio > p {
+    color: var(--White);
+    line-height: 2em;
+  }
+
+  .user-repo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 279px;
+    height: 85px;
+    background: var(--Black);
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .column > p,
+  .column > h3 {
+    color: var(--White);
+  }
+
+  .column > p {
+    font-size: 11px;
+    font-weight: var(--Space-Mono-Reg);
+  }
+
+  .column > h4 {
+    font-size: var(--H3-px-Size);
+    font-size: var(--Space-Mono-Bold);
   }
 }

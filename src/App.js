@@ -6,9 +6,15 @@ import UserinfoComponent from "./Components/UserInfoComponent";
 function App() {
   return (
     <div className="App">
-      <HeaderComponent />
-      <SearchbarComponet />
-      <UserinfoComponent />
+      <div className="header-component-container">
+        <HeaderComponent />
+      </div>
+      <div className="searchBar-component-container">
+        <SearchbarComponet />
+      </div>
+      <div className="cardInfo-component-container">
+        <UserinfoComponent />
+      </div>
     </div>
   );
 }
