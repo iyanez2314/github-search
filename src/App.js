@@ -14,6 +14,9 @@ function App() {
   const [imageUrl, setImageUrl] = useState("");
   const [createdAt, setCreatedAt] = useState("");
   const [userUrl, setUserUrl] = useState("");
+  const [userLocation, setUserLocation] = useState("");
+  const [userCompany, setUserCompany] = useState("");
+  const [userTwitter, setUserTwitter] = useState("");
 
   function fetchUser(user) {
     fetch(`https://api.github.com/users/${user}`)
@@ -22,6 +25,9 @@ function App() {
   }
 
   function handleStateChange(userData) {
+    setUserLocation(userData.location);
+    setUserCompany(userData.company);
+    setUserTwitter(userData.twitter_username);
     setUserUrl(userData.html_url);
     setBio(userData.bio);
     setName(userData.name);
@@ -52,6 +58,9 @@ function App() {
           username={username}
           imageUrl={imageUrl}
           createdAt={createdAt}
+          userLocation={userLocation}
+          userCompany={userCompany}
+          userTwitter={userTwitter}
         />
       </div>
     </div>

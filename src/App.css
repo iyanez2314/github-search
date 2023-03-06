@@ -33,6 +33,10 @@
   color: var(--White);
 }
 
+.no-info {
+  opacity: 50;
+}
+
 @media only screen and (max-width: 375px) {
   .header-component-container {
     margin-top: 20px;
@@ -133,6 +137,15 @@
     font-size: var(--H4-px-size);
     font-weight: var(--Space-Mono-Reg);
     color: var(--Light-Blue);
+  }
+
+  .github-handle > a {
+    text-decoration: unset;
+    color: var(--Light-Blue);
+  }
+
+  .github-handle:hover {
+    text-decoration: underline;
   }
 
   .github-join {
