@@ -26,7 +26,6 @@
   background: var(--Black);
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .Header-container > h1,
@@ -191,5 +190,25 @@
   .column > h4 {
     font-size: var(--H3-px-Size);
     font-size: var(--Space-Mono-Bold);
+  }
+
+  .user-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .wfc > p {
+    color: var(--White);
+    font-size: var(--H4-px-size);
+  }
+
+  .user-information {
+    display: flex;
+    width: 272px;
+    gap: 10px;
   }
 }
