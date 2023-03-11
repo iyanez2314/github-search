@@ -26,6 +26,7 @@
   background: var(--Black);
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .Header-container > h1,
@@ -35,6 +36,201 @@
 
 .no-info {
   opacity: 50;
+}
+
+.header-component-container {
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.searchBar-component-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.Header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Header-container > h4 {
+  font-size: var(--H4-px-size);
+  font-weight: var(--Space-Mono-Bold);
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.Input-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-container {
+  position: absolute;
+  z-index: 1;
+  right: 662px;
+  top: 132px;
+}
+
+.Input-container > input {
+  width: 526px;
+  height: 60px;
+  background: var(--Dark-Blue);
+  border-radius: 15px;
+  border: unset;
+  position: relative;
+  margin: 14px;
+  padding-left: 40px;
+}
+
+.Input-container > button {
+  background: var(--Light-Blue);
+  width: 84px;
+  height: 46px;
+  border: unset;
+  border-radius: 15px;
+  color: var(--White);
+  font-size: 14px;
+  font-weight: var(--Space-Mono-Bold);
+  position: absolute;
+  left: 599px;
+  top: 119px;
+}
+
+.cardInfo-component-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  background-color: var(--Dark-Blue);
+  height: 481px;
+  width: 573px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users-info {
+  justify-content: space-evenly;
+  display: flex;
+  padding-top: 30px;
+  gap: 50px;
+  align-items: center;
+}
+
+.user-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-info > h3 {
+  font-size: var(--H3-px-size);
+  font-weight: var(--Space-Mono-Bold);
+  color: var(--White);
+}
+
+.github-handle {
+  font-size: var(--H4-px-size);
+  font-weight: var(--Space-Mono-Reg);
+  color: var(--Light-Blue);
+}
+
+.github-handle > a {
+  text-decoration: unset;
+  color: var(--Light-Blue);
+}
+
+.github-handle:hover {
+  text-decoration: underline;
+}
+
+.github-join {
+  font-size: var(--H4-px-size);
+  font-weight: var(--Space-Mono-Reg);
+  color: var(--White);
+}
+
+.users-avi {
+  width: 115px;
+  height: 115px;
+  border-radius: 100px;
+}
+
+.user-bio {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.user-bio > p {
+  color: var(--White);
+  line-height: 2em;
+}
+
+.user-repo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 493px;
+  height: 85px;
+  background: var(--Black);
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column > p,
+.column > h3 {
+  color: var(--White);
+}
+
+.column > p {
+  font-size: 11px;
+  font-weight: var(--Space-Mono-Reg);
+}
+
+.column > h4 {
+  font-size: var(--H3-px-Size);
+  font-size: var(--Space-Mono-Bold);
+}
+
+.user-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.wfc > p {
+  color: var(--White);
+  font-size: var(--H4-px-size);
+}
+
+.user-information {
+  display: flex;
+  width: 272px;
+  gap: 10px;
 }
 
 @media only screen and (max-width: 375px) {
